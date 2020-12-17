@@ -17,7 +17,8 @@ new Vue({
       job: 'Accountant'
     },
     isActive: false,
-    activeClass: 'is-active'
+    activeClass: 'is-active',
+    counter: 0
   },
   methods: {
     randomList  () {
@@ -25,6 +26,12 @@ new Vue({
     },
     changeActive () {
       this.isActive = !this.isActive
+    },
+    onClick (event) {
+      // v-on:click.stop =  event.stopPropagation()
+      // v-on:click.prevent =  event.preventDefault()
+      // https://vuejs.org/v2/guide/events.html
+      this.counter += 1
     }
   }
 })

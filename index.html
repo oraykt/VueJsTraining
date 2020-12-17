@@ -24,7 +24,7 @@
       <div v-for="(item, index) in shoppingList" :key="item">
         {{index}} : {{ item }}
       </div>
-      <button v-on:click='randomList'>Random List</button>
+      <button @click='randomList'>Random List</button>
     </p>
 
     <p>
@@ -47,11 +47,17 @@
       </div>
     </p>
 
-    <p v-bind:class="[isActive ? activeClass : '']" v-bind:style="isActive ? {fontSize: ' 25px'} : ''">
+    <p :class="[isActive ? activeClass : '']" :style="isActive ? {fontSize: ' 25px'} : ''">
       Lorem ipsun dolor sit amet
-      <button v-on:click='changeActive'>Change active status</button>
+      <button @click='changeActive'>Change active status</button>
     </p>
 
+    <p>
+      <button @click='onClick'>Click</button>
+      <p>
+        Click counter: {{counter}}
+      </p>
+    </p>
   </div>
   <!-- built files will be auto injected -->
 </body>
