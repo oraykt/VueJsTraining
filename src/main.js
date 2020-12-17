@@ -18,10 +18,12 @@ new Vue({
     },
     isActive: false,
     activeClass: 'is-active',
-    counter: 0
+    counter: 0,
+    linkedIn: "<a href='https://linkedin.com/in/rootkt'> Linkedin Profile </a>",
+    github: "<a href='https://github.com/oraykt'> Github Profile </a>"
   },
   methods: {
-    randomList  () {
+    randomList () {
       this.shoppingList = this.shoppingList.sort(() => Math.random() - 0.5)
     },
     changeActive () {
