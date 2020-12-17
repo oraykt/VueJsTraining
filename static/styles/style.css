@@ -7,3 +7,7 @@ body {
   width: 200px;
   margin: 0 auto 20px;
 }
+
+.is-active {
+  color: blue;
+}

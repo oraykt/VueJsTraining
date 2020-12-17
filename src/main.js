@@ -15,11 +15,16 @@ new Vue({
       name: 'Asia',
       age: 30,
       job: 'Accountant'
-    }
+    },
+    isActive: false,
+    activeClass: 'is-active'
   },
   methods: {
     randomList  () {
       this.shoppingList = this.shoppingList.sort(() => Math.random() - 0.5)
+    },
+    changeActive () {
+      this.isActive = !this.isActive
     }
   }
 })

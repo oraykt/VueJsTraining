@@ -46,6 +46,12 @@
         input box is empty.
       </div>
     </p>
+
+    <p v-bind:class="[isActive ? activeClass : '']" v-bind:style="isActive ? {fontSize: ' 25px'} : ''">
+      Lorem ipsun dolor sit amet
+      <button v-on:click='changeActive'>Change active status</button>
+    </p>
+
   </div>
   <!-- built files will be auto injected -->
 </body>
