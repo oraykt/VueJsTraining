@@ -1,10 +1,12 @@
 # easytostart
 
+This is a self-improvement repository for VueJs Training.
+
 > A Vue.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
