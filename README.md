@@ -3,6 +3,7 @@
 This is a self-improvement repository for VueJs Training.
 
 > A Vue.js project
+> ![https://easytostartvuejs.herokuapp.com/](https://easytostartvuejs.herokuapp.com/)
 
 ## Build Setup
 
