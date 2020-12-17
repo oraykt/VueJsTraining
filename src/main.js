@@ -8,6 +8,18 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   data: {
-    text: ''
+    text: '',
+    vShowText: '',
+    shoppingList: ['Sugar', 'Bread', 'Kabanos', 'Milk', 'Newspaper'],
+    friend: {
+      name: 'Asia',
+      age: 30,
+      job: 'Accountant'
+    }
+  },
+  methods: {
+    randomList  () {
+      this.shoppingList = this.shoppingList.sort(() => Math.random() - 0.5)
+    }
   }
 })

@@ -11,10 +11,40 @@
 <body>
   <div id="app">
     <h1>Hello World</h1>
+    <div>
+      <h4>Vue Instance</h4>
+      <input type="text" id="text" v-model="text">
+      <p id="output">
+        {{ text }}
+      </p>
+    </div>
 
-    <input type="text" id="text" v-model="text">
-    <p id="output">
-      {{ text }}
+    <p>
+      <h4>v-for an array</h4>
+      <div v-for="(item, index) in shoppingList" :key="item">
+        {{index}} : {{ item }}
+      </div>
+      <button v-on:click='randomList'>Random List</button>
+    </p>
+
+    <p>
+      <h4>v-for an object</h4>
+      <div v-for="(property, key) in friend">
+        {{key}} : {{property}}
+      </div>
+    </p>
+    <p>
+      <h4>v-show</h4>
+      <input type="text" v-model="vShowText" placeholder="There is a hidden div below">
+      <div v-show="vShowText.length > 0 ">
+        You find it!!
+      </div>
+      <div v-if="vShowText.length > 0">
+        input box is not empty.
+      </div>
+      <div v-else=>
+        input box is empty.
+      </div>
     </p>
   </div>
   <!-- built files will be auto injected -->
